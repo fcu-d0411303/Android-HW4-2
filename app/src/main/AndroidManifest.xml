@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="benson.NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
         <activity
             android:name=".GreetingActivity"
             android:label="@string/app_name">
